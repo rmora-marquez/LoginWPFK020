@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="300" Background="LightGray" >
-        <TextBox VerticalAlignment="Center" Margin="10 50 10 0" FontSize="20" Text="Email" AcceptsReturn="False"></TextBox>
-
-        <PasswordBox VerticalAlignment="Center" Margin="10 50 10 0" FontSize="20" ></PasswordBox>
-        <Button Margin="10 50 10 0" FontSize="20" FontWeight="Bold" Background="Navy"                 
+        <Label Name="etiqueta1" Margin="10" FontSize="20">Username:</Label>
+        <TextBox Name="usernameTextbox" VerticalAlignment="Center" Margin="10" FontSize="20"  AcceptsReturn="False"></TextBox>
+        <Label Margin="10" FontSize="20">Password:</Label>
+        <PasswordBox Name="passwordTextbox" VerticalAlignment="Center" Margin="10" FontSize="20" ></PasswordBox>
+        <Button Name="loginButton" Click="loginButton_Click" Margin="10" FontSize="20" FontWeight="Bold" Background="Navy"                 
                 Foreground="White" Width="200">Entrar</Button>
+        <Label Name="salidaLabel" FontSize="24" ></Label>
         <RichTextBox Margin="20" FontSize="20" Visibility="Hidden"></RichTextBox>
     </StackPanel>
 </Window>
